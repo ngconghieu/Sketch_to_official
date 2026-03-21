@@ -35,7 +35,6 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        ctx.isGrounded = CheckGround();
         anim.SetBool(Const.Ground, ctx.isGrounded);
         anim.SetFloat(Const.VelocityY, rb.linearVelocity.y);
 
@@ -70,6 +69,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        ctx.isGrounded = CheckGround();
         if (isDashing) return;
 
         // Move
