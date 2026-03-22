@@ -12,7 +12,6 @@ public class AutoAssignEditor : Editor
     // Draw Inspector interface 
     public override void OnInspectorGUI()
     {
-        base.OnInspectorGUI();
         DrawDefaultInspector();
         EditorGUILayout.Space(10);
 
